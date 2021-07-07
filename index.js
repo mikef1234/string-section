@@ -29,8 +29,9 @@ function camelCase(sentence) {
 
     const letters = arr[i].split('')
 
-    letters[0] = letters[0].toUpperCase()
-
+    if (i > 0) {
+      letters[0] = letters[0].toUpperCase()
+    }
     arr[i] = letters.join('')
   }
 
